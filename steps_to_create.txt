@@ -1,0 +1,33 @@
+#First steps
+
+1. Create an empty directory
+2. Navigate to folder and run npm init
+3. Fill out the required information
+4. Create file server.js for the base of the code.
+
+#Creating the server and installing dependencies
+
+1. To install express: npm install --save express
+2. Copy the base example to have a basic function website
+
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
+
+
+#Linking the first HTML page
+1. create the views folder
+2. create an index.ejs file in the views folder
+3. run npm install ejs --save for the rendering tool
+
+#Other things
+1. Create a public folder that will contain images, css, fonts, javascripts files, etc.
+
+Good tutorial: https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b

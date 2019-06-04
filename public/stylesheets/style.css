@@ -1,0 +1,164 @@
+/* Global */
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+@font-face{
+	font-family: "Roboto";
+	src:url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Roboto-light";
+	src:url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face{
+	font-family: "Raleway-Regular";
+	src:url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Nunito-SemiBold";
+	src:url("../fonts/Nunito/Nunito-SemiBold.ttf");
+}
+
+/*Style for footer and header */
+
+footer{
+  position:fixed;
+  height:10%;
+  width:100%;
+  right:0;
+  bottom:0;
+}
+
+.footer_img{
+  width:10px;
+  height:10px;
+  cursor:pointer;
+  padding:15px;
+  margin:25px 20px 0 20px;
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  display:block;
+  text-indent:-9999px;
+  float:left;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+.footer_img:hover{
+  margin-top: 15px;
+}
+
+.footer_img:first-child{
+  margin-left:43.5%;
+}
+
+.header_link{
+  color:#d6d6d6;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+.header_link:hover{
+  color:black;
+  border-bottom: 1px solid black;
+}
+
+header{
+  height:10%;
+  width:100%;
+}
+
+header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li, header p{
+  float: left;
+  font-family: "Raleway-Regular";
+}
+
+header li{
+  float:right;
+  font-size: 20px;
+  padding: 35px 60px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+header p{
+  font-size: 40px;
+  padding: 25px;
+}
+
+.header_content{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style for index.html */
+
+#facebook_link{
+  background-image: url("../img/facebook_icon.png");
+}
+
+#instagram_link{
+  background-image: url("../img/instagram_icon.png");
+}
+
+#linkedin_link{
+  background-image: url("../img/linkedin_icon.png");
+}
+
+#home_content{
+  width:70%;
+  height:550px;
+  z-index:1;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 5% auto 0 auto;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#home_content img{
+  display:block;
+  float:left;
+  height:80%;
+  width:auto;
+  margin-top: 4%;
+  margin-left:5%;
+  border-radius: 50%;
+}
+
+#home_text{
+  display:block;
+  float:left;
+  width:40%;
+  height:100%;
+  padding-left: 10%;
+  margin-left: 5%;
+  border-left: 1px solid #d3d3d3;
+}
+
+.main_content{
+  height: 80%;
+  width:100%;
+}
