@@ -13,7 +13,7 @@
 
 	<script>
 		window.onload = () => {
-
+			Utils.focusComponentHeader(document.location.href);
 		}
 	</script>
 
@@ -22,16 +22,16 @@
 			<p>Gabriel Bombardier</p>
 			<ul>
 				<li class="header_content">
-					<a class="header_link" href="/resume">Résumé</a>
+					<a id="resume_link" class="header_link" href="/resume">Résumé</a>
 				</li>
 				<li class="header_content">
-					<a class="header_link" href="/projects">Projets</a>
+					<a id="projects_link" class="header_link" href="/projects">Projets</a>
 				</li>
 				<li class="header_content">
-					<a class="header_link" href="/about">À Propos</a>
+					<a id="about_link" class="header_link" href="/about">À Propos</a>
 				</li>
 				<li class="header_content">
-					<a class="header_link" href="/">Accueil</a>
+					<a id="_link" class="header_link" href="/">Accueil</a>
 				</li>
 			</ul>
 		</header>
@@ -42,6 +42,8 @@
 				<p id="home_text">Enseignant de mathématiques et programmeur informatique, je n'ai pas peur de suivre mes rêves et mes passions. Grand voyageur, mes périples en Asie, Europe, Nicaragua et États-Unis
 					m'ont permis de voir à quel point notre monde est grand et qu'il mérite d'être découvert. Lorsque je ne suis pas devant une classe ou un ordinateur, vous pouvez me trouver au volant de ma moto ou dans
 					un parc en train de bouger!
+					<br><br>
+					Vous pouvez naviguer sur le site pour avoir plus d'informations sur moi. Sinon, <a href="../public/Bombardier_Gabriel_CV.pdf" target="_blank">cliquez ici</a> pour télécharger mon CV en PDF.
 				</p>
 			</div>
 		</div>
@@ -50,6 +52,7 @@
 				<a class = "footer_img" id="facebook_link" href="https://www.facebook.com/bababriel" target="_blank">Facebook Icon</a>
 				<a class = "footer_img" id="instagram_link" href="https://www.instagram.com/bababriel" target="_blank">Instagram Icon</a>
 				<a class = "footer_img" id="linkedin_link" href="https://www.linkedin.com/in/gbombardier" target="_blank">LinkedIn Icon</a>
+				<a class = "footer_img" id="github_link" href="https://github.com/gbombardier" target="_blank">Github Icon</a>
 			</div>
 		</footer>
 	</body>

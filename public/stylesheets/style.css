@@ -35,6 +35,16 @@ body{
 	src:url("../fonts/Nunito/Nunito-SemiBold.ttf");
 }
 
+@font-face{
+	font-family: "Noticia-Regular";
+	src:url("../fonts/Noticia_Text/NoticiaText-Regular.ttf");
+}
+
+@font-face{
+	font-family: "PlayfairDisplay-Regular";
+	src:url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
 /*Style for footer and header */
 
 footer{
@@ -127,6 +137,10 @@ header p{
   background-image: url("../img/linkedin_icon.png");
 }
 
+#github_link{
+  background-image: url("../img/github_icon.png");
+}
+
 #home_content{
   width:70%;
   height:550px;
@@ -151,10 +165,11 @@ header p{
 #home_text{
   display:block;
   position:relative;
-  top:32%;
+  top:25%;
   float:left;
   width:35%;
-  height:100%;
+	margin-right:70px;
+  height:80%;
   padding-left: 11%;
   font-family: "Nunito-SemiBold";
   text-align: justify;
@@ -165,4 +180,44 @@ header p{
 .main_content{
   height: 80%;
   width:100%;
+}
+
+/* Style for resume.html */
+
+#cv_content{
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+
+.cv_content_row{
+	width:100%;
+	height:400px;
+}
+
+.cv_content_column{
+	width:50%;
+	display:block;
+	float:left;
+	margin-top: 75px;
+	text-align: center;
+	line-height: 30px;
+	font-family: "Raleway-Regular";
+	font-size: 20px;
+}
+
+ul{
+	list-style: none;
+}
+
+.cv_content_column:first-of-type{
+	display:block;
+	float:left;
+}
+
+.cv_header{
+	font-family:"PlayfairDisplay-Regular";
+	font-size:24px;
+	text-align:center;
+	margin-top: 50px;
 }
