@@ -15,6 +15,21 @@
 		window.onload = () => {
 			Utils.focusComponentHeader(document.location.href);
 		}
+
+		function openPopup(imgNode) {
+			var imgName = imgNode.src.substring(imgNode.src.lastIndexOf('/')+1);
+			imgName = imgName.substring(0, imgName.lastIndexOf("_"));
+
+		  var popup = document.getElementById("myPopup");
+			Utils.putXpText(popup, imgName);
+
+			console.log(popup.style.visibility)
+			if(popup.style.visibility==""){
+				popup.style.visibility = "visible";
+				popup.classList.toggle("show");
+			}
+
+		}
 	</script>
 
 	<body>
@@ -62,11 +77,14 @@
 				<div class="cv_content_column">
 					<h1 class = "cv_header">Expériences de Travail</h1>
 					<div id="xp_container">
-						<img class="xp_img" src="../public/img/csmb_logo.png" alt="">
-						<img class="xp_img" src="../public/img/summit_logo.png" alt="">
-						<img class="xp_img" src="../public/img/gcm_logo.png" alt="">
-						<img class="xp_img" src="../public/img/makwa_logo.png" alt="">
-						<img class="xp_img" src="../public/img/csdgs_logo.png" alt="">
+						<div class="popup">
+							<img class="xp_img" src="../public/img/csmb_logo.png" alt="" onclick="openPopup(this)">
+							<img class="xp_img" src="../public/img/summit_logo.png" alt="" onclick="openPopup(this)">
+							<img class="xp_img" src="../public/img/gcm_logo.png" alt="" onclick="openPopup(this)">
+							<img class="xp_img" src="../public/img/makwa_logo.png" alt="" onclick="openPopup(this)">
+							<img class="xp_img" src="../public/img/csdgs_logo.png" alt="" onclick="openPopup(this)">
+							<span class="popuptext" id="myPopup">Popup text...</span>
+						</div>
 					</div>
 				</div>
 				<div class="cv_content_column">

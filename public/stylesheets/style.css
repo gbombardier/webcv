@@ -211,7 +211,7 @@ header p{
 	text-align: center;
 	line-height: 30px;
 	font-family: "Raleway-Regular";
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .cv_content_column:first-of-type{
@@ -241,11 +241,12 @@ ul{
 }
 
 .xp_img{
-	width:150px !important;
+	width:26% !important;
 	height:auto;
 	display:block;
 	float:left;
 	margin-left:7%;
+	cursor: pointer;
 }
 
 #xp_container{
@@ -253,3 +254,47 @@ ul{
 	margin:25px auto;
 	width:60%;
 }
+
+/* For the popups */
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 150%;
+	height:200px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 115%;
+  left: 0;
+  margin-left: -80px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* End of for the popups */
